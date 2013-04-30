@@ -1,0 +1,10 @@
+[Core]
+Name = mako
+Module = compile_mako
+
+[Documentation]
+Author = Michael Hansen
+Version = 0.1
+Website = http://synesthesiam.com
+Description = Compile Mako template into HTML
+

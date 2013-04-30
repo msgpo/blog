@@ -1,0 +1,26 @@
+name,cc
+between_functions.py, 7
+between_inline.py, 7
+counting_nospace.py, 2
+counting_twospaces.py, 2
+funcall_nospace.py, 2
+funcall_space.py, 2
+funcall_vars.py, 2
+initvar_bothbad.py, 3
+initvar_good.py, 3
+initvar_onebad.py, 3
+order_inorder.py, 4
+order_shuffled.py, 4
+overload_multmixed.py, 1
+overload_plusmixed.py, 1
+overload_strings.py, 1
+partition_balanced.py, 4
+partition_unbalanced_pivot.py, 4
+partition_unbalanced.py, 4
+rectangle_basic.py, 2
+rectangle_class.py, 5
+rectangle_tuples.py, 2
+scope_diffname.py, 3
+scope_samename.py, 3
+whitespace_linedup.py, 1
+whitespace_zigzag.py, 1

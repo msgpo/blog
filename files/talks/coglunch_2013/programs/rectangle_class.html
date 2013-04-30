@@ -1,0 +1,22 @@
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">class</span> <span style="color: #B00060; font-weight: bold">Rectangle</span>:
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0060B0; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, x1, y1, x2, y2):
+        <span style="color: #007020">self</span><span style="color: #303030">.</span>x1 <span style="color: #303030">=</span> x1
+        <span style="color: #007020">self</span><span style="color: #303030">.</span>y1 <span style="color: #303030">=</span> y1
+        <span style="color: #007020">self</span><span style="color: #303030">.</span>x2 <span style="color: #303030">=</span> x2
+        <span style="color: #007020">self</span><span style="color: #303030">.</span>y2 <span style="color: #303030">=</span> y2
+
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0060B0; font-weight: bold">width</span>(<span style="color: #007020">self</span>):
+        <span style="color: #008000; font-weight: bold">return</span> <span style="color: #007020">self</span><span style="color: #303030">.</span>x2 <span style="color: #303030">-</span> <span style="color: #007020">self</span><span style="color: #303030">.</span>x1
+
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0060B0; font-weight: bold">height</span>(<span style="color: #007020">self</span>):
+        <span style="color: #008000; font-weight: bold">return</span> <span style="color: #007020">self</span><span style="color: #303030">.</span>y2 <span style="color: #303030">-</span> <span style="color: #007020">self</span><span style="color: #303030">.</span>y1
+
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0060B0; font-weight: bold">area</span>(<span style="color: #007020">self</span>):
+        <span style="color: #008000; font-weight: bold">return</span> <span style="color: #007020">self</span><span style="color: #303030">.</span>width() <span style="color: #303030">*</span> <span style="color: #007020">self</span><span style="color: #303030">.</span>height()
+
+rect1 <span style="color: #303030">=</span> Rectangle(<span style="color: #0000D0; font-weight: bold">0</span>, <span style="color: #0000D0; font-weight: bold">0</span>, <span style="color: #0000D0; font-weight: bold">10</span>, <span style="color: #0000D0; font-weight: bold">10</span>)
+<span style="color: #008000; font-weight: bold">print</span> rect1<span style="color: #303030">.</span>area()
+
+rect2 <span style="color: #303030">=</span> Rectangle(<span style="color: #0000D0; font-weight: bold">5</span>, <span style="color: #0000D0; font-weight: bold">5</span>, <span style="color: #0000D0; font-weight: bold">10</span>, <span style="color: #0000D0; font-weight: bold">10</span>)
+<span style="color: #008000; font-weight: bold">print</span> rect2<span style="color: #303030">.</span>area()
+</pre></div>

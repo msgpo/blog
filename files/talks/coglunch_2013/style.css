@@ -1,0 +1,290 @@
+html, .view body { background-color: black; counter-reset: slideidx; }
+body, .view section { background-color: white; border-radius: 12px }
+
+/* A section is a slide. It's size is 800x600, and this will never change */
+section, .view head > title {
+    /* The font from Google */
+    font-family: 'Oswald', arial, serif;
+    font-size: 30px;
+}
+
+.view section:after {
+    counter-increment: slideidx;
+    content: counter(slideidx, decimal-leading-zero);
+    position: absolute; bottom: -80px; right: 100px;
+    color: white;
+}
+
+.view head > title {
+    color: white;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+h1, h2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 80px;
+}
+h3 {
+    margin: 0 0 5px 20px;
+}
+
+ul {
+    margin: 15px 0 0 100px;
+}
+
+ul li ul {
+    margin: 0 0 0 50px;
+    font-size: 25px;
+}
+
+ol {
+    margin: 15px 0 0 100px;
+}
+
+ol li ol {
+    margin: 0 0 0 50px;
+    font-size: 25px;
+}
+
+ol li ul {
+    margin: 0 0 0 50px;
+    font-size: 25px;
+}
+
+.hifirst > li > span {
+    color: #A33;
+}
+
+ul ul ul {
+    color: #333;
+    font-size: 20px;
+}
+
+p {
+    margin: 75px;
+    font-size: 50px;
+}
+
+blockquote {
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    padding: 50px;
+}
+blockquote:before {
+    content: open-quote;
+}
+blockquote:after {
+    content: close-quote;
+}
+
+/* Figures are displayed full-page, with the caption
+on top of the image/video */
+figure {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+figure > * {
+    position: absolute;
+}
+figure > img, figure > video {
+    width: 100%; height: 100%;
+}
+figcaption {
+    margin: 70px;
+    font-size: 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    background-color: #F3F4F8;
+    border-top: 1px solid #CCC;
+    font-size: 20px;
+}
+
+/* Transition effect */
+/* Feel free to change the transition effect for original
+animations. See here:
+https://developer.mozilla.org/en/CSS/CSS_transitions
+How to use CSS3 Transitions: */
+section {
+    -moz-transition: left 400ms linear 0s;
+    -webkit-transition: left 400ms linear 0s;
+    -ms-transition: left 400ms linear 0s;
+    transition: left 400ms linear 0s;
+}
+.view section {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+}
+
+.view section[aria-selected] {
+    border: 5px red solid;
+}
+
+/* Before */
+section { left: -150%; }
+/* Now */
+section[aria-selected] { left: 0; }
+/* After */
+section[aria-selected] ~ section { left: +150%; }
+
+/* Incremental elements */
+
+/* By default, visible */
+.incremental > * { opacity: 1; }
+
+/* The current item */
+.incremental > *[aria-selected] { opacity: 1; }
+
+/* The items to-be-selected */
+.incremental > *[aria-selected] ~ * { opacity: 0; }
+
+/* The progressbar, at the bottom of the slides, show the global
+progress of the presentation. */
+#progress-bar {
+    height: 2px;
+    background: #AAA;
+}
+
+/* Custom styles */
+div.half {
+    width: 45%;
+    margin: 0 0 10px 25px;
+}
+
+div.col {
+    float: left;
+}
+
+.center {
+    text-align: center;
+}
+
+div.col iframe {
+    width: 100%;
+    height: 100%;
+}
+
+div.col h4 {
+    font-size: 20px;
+    color: #A33;
+    margin-top: 0;
+}
+
+div.col img {
+    max-width: 90%;
+    height: auto;
+}
+
+div.third {
+    width: 30%;
+    margin: 0 0 10px 15px;
+}
+
+div.fourth {
+    width: 22%;
+    margin: 0 0 10px 15px;
+}
+
+div.output {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 15px;
+    font-family: monospace;
+    border: 1px solid #DDD;
+    padding: 3px;
+}
+
+div.mono {
+    font-family: monospace;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.error {
+    color: #F22;
+}
+
+
+thead {
+    display: table-header-group;
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 8px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 30px;
+}
+
+table.small td {
+    font-size: 20px;
+}
+
+table tbody tr td {
+    font-size: 20px;
+}
+
+table tbody tr td:first-child {
+    font-size: 25px;
+}
+
+table.small tbody tr td {
+    font-size: 15px;
+}
+
+table.small tbody tr td:first-child {
+    font-size: 16px;
+}
+
+table tbody > tr:nth-child(odd) > td {
+  background-color: #EEE;
+  border-top: 1px solid #DDD;
+}
+
+.hand {
+    font-family: 'Handlee', arial, serif;
+    font-size: 20px;
+    color: black;
+}
+
+hr {
+    margin: 0;
+}
+
+.legend li {
+    list-style-type: none;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.box {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 5px;
+}

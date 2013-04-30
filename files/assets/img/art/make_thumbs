@@ -1,0 +1,8 @@
+#!/bin/bash
+rm *_thumb.jpg
+
+for f in *.png;
+do
+    echo $f;
+    convert -background white -flatten -thumbnail 100x100 $f `basename $f .png`_thumb.jpg;
+done

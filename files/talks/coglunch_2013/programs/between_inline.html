@@ -1,0 +1,20 @@
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%">x <span style="color: #303030">=</span> [<span style="color: #0000D0; font-weight: bold">2</span>, <span style="color: #0000D0; font-weight: bold">8</span>, <span style="color: #0000D0; font-weight: bold">7</span>, <span style="color: #0000D0; font-weight: bold">9</span>, <span style="color: #303030">-</span><span style="color: #0000D0; font-weight: bold">5</span>, <span style="color: #0000D0; font-weight: bold">0</span>, <span style="color: #0000D0; font-weight: bold">2</span>]
+x_between <span style="color: #303030">=</span> []
+<span style="color: #008000; font-weight: bold">for</span> x_i <span style="color: #000000; font-weight: bold">in</span> x:
+    <span style="color: #008000; font-weight: bold">if</span> (<span style="color: #0000D0; font-weight: bold">2</span> <span style="color: #303030">&lt;</span> x_i) <span style="color: #000000; font-weight: bold">and</span> (x_i <span style="color: #303030">&lt;</span> <span style="color: #0000D0; font-weight: bold">10</span>):
+        x_between<span style="color: #303030">.</span>append(x_i)
+<span style="color: #008000; font-weight: bold">print</span> x_between
+
+y <span style="color: #303030">=</span> [<span style="color: #0000D0; font-weight: bold">1</span>, <span style="color: #303030">-</span><span style="color: #0000D0; font-weight: bold">3</span>, <span style="color: #0000D0; font-weight: bold">10</span>, <span style="color: #0000D0; font-weight: bold">0</span>, <span style="color: #0000D0; font-weight: bold">8</span>, <span style="color: #0000D0; font-weight: bold">9</span>, <span style="color: #0000D0; font-weight: bold">1</span>]
+y_between <span style="color: #303030">=</span> []
+<span style="color: #008000; font-weight: bold">for</span> y_i <span style="color: #000000; font-weight: bold">in</span> y:
+    <span style="color: #008000; font-weight: bold">if</span> (<span style="color: #303030">-</span><span style="color: #0000D0; font-weight: bold">2</span> <span style="color: #303030">&lt;</span> y_i) <span style="color: #000000; font-weight: bold">and</span> (y_i <span style="color: #303030">&lt;</span> <span style="color: #0000D0; font-weight: bold">9</span>):
+        y_between<span style="color: #303030">.</span>append(y_i)
+<span style="color: #008000; font-weight: bold">print</span> y_between
+
+xy_common <span style="color: #303030">=</span> []
+<span style="color: #008000; font-weight: bold">for</span> x_i <span style="color: #000000; font-weight: bold">in</span> x:
+    <span style="color: #008000; font-weight: bold">if</span> x_i <span style="color: #000000; font-weight: bold">in</span> y:
+        xy_common<span style="color: #303030">.</span>append(x_i)
+<span style="color: #008000; font-weight: bold">print</span> xy_common
+</pre></div>

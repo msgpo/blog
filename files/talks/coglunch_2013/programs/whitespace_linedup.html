@@ -1,0 +1,15 @@
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%">intercept <span style="color: #303030">=</span> <span style="color: #0000D0; font-weight: bold">1</span>
+slope     <span style="color: #303030">=</span> <span style="color: #0000D0; font-weight: bold">5</span>
+
+x_base  <span style="color: #303030">=</span> <span style="color: #0000D0; font-weight: bold">0</span>
+x_other <span style="color: #303030">=</span> x_base <span style="color: #303030">+</span> <span style="color: #0000D0; font-weight: bold">1</span>
+x_end   <span style="color: #303030">=</span> x_base <span style="color: #303030">+</span> x_other <span style="color: #303030">+</span> <span style="color: #0000D0; font-weight: bold">1</span>
+
+y_base  <span style="color: #303030">=</span> slope <span style="color: #303030">*</span> x_base  <span style="color: #303030">+</span> intercept
+y_other <span style="color: #303030">=</span> slope <span style="color: #303030">*</span> x_other <span style="color: #303030">+</span> intercept
+y_end   <span style="color: #303030">=</span> slope <span style="color: #303030">*</span> x_end   <span style="color: #303030">+</span> intercept
+
+<span style="color: #008000; font-weight: bold">print</span> x_base,  y_base
+<span style="color: #008000; font-weight: bold">print</span> x_other, y_other
+<span style="color: #008000; font-weight: bold">print</span> x_end,   y_end
+</pre></div>

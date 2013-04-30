@@ -1,0 +1,38 @@
+#titlebox {
+    float: right;
+}
+
+#titlelogo {
+    float: right;
+    margin-left: 15px;
+}
+
+#blog-title a {
+    font-family: monospace;
+    color: #333;
+}
+
+#blog-title a:hover {
+    text-decoration: none;
+    color: #005580;
+}
+
+.table-list td {
+    padding-bottom: 20px;
+}
+
+hr.light {
+    border-top: 1px solid #EEEEEE;
+}
+
+.half-spacer {
+    margin-top: 15px;
+}
+
+.spacer {
+    margin-top: 30px;
+}
+
+.postbox {
+    border: none;
+}

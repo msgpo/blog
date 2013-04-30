@@ -1,0 +1,35 @@
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#contentcolumn {
+    max-width: 760px;
+}
+#q {
+    width: 150px;
+}
+
+img {
+    max-width: 90%;
+}
+
+.postbox {
+    border-bottom: 2px solid darkgrey;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.titlebox {
+    text-align: right;
+}
+
+#addthisbox {margin-bottom: 12px;}
+
+h2 {
+    color: #005580;
+}
+
+h3 {
+    color: #008055;
+}

@@ -1,0 +1,25 @@
+<div class="highlight" style="background: #ffffff"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0060B0; font-weight: bold">between</span>(numbers, low, high):
+    winners <span style="color: #303030">=</span> []
+    <span style="color: #008000; font-weight: bold">for</span> num <span style="color: #000000; font-weight: bold">in</span> numbers:
+        <span style="color: #008000; font-weight: bold">if</span> (low <span style="color: #303030">&lt;</span> num) <span style="color: #000000; font-weight: bold">and</span> (num <span style="color: #303030">&lt;</span> high):
+            winners<span style="color: #303030">.</span>append(num)
+    <span style="color: #008000; font-weight: bold">return</span> winners
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0060B0; font-weight: bold">common</span>(list1, list2):
+    winners <span style="color: #303030">=</span> []
+    <span style="color: #008000; font-weight: bold">for</span> item1 <span style="color: #000000; font-weight: bold">in</span> list1:
+        <span style="color: #008000; font-weight: bold">if</span> item1 <span style="color: #000000; font-weight: bold">in</span> list2:
+            winners<span style="color: #303030">.</span>append(item1)
+    <span style="color: #008000; font-weight: bold">return</span> winners
+
+x <span style="color: #303030">=</span> [<span style="color: #0000D0; font-weight: bold">2</span>, <span style="color: #0000D0; font-weight: bold">8</span>, <span style="color: #0000D0; font-weight: bold">7</span>, <span style="color: #0000D0; font-weight: bold">9</span>, <span style="color: #303030">-</span><span style="color: #0000D0; font-weight: bold">5</span>, <span style="color: #0000D0; font-weight: bold">0</span>, <span style="color: #0000D0; font-weight: bold">2</span>]
+x_btwn <span style="color: #303030">=</span> between(x, <span style="color: #0000D0; font-weight: bold">2</span>, <span style="color: #0000D0; font-weight: bold">10</span>)
+<span style="color: #008000; font-weight: bold">print</span> x_btwn 
+
+y <span style="color: #303030">=</span> [<span style="color: #0000D0; font-weight: bold">1</span>, <span style="color: #303030">-</span><span style="color: #0000D0; font-weight: bold">3</span>, <span style="color: #0000D0; font-weight: bold">10</span>, <span style="color: #0000D0; font-weight: bold">0</span>, <span style="color: #0000D0; font-weight: bold">8</span>, <span style="color: #0000D0; font-weight: bold">9</span>, <span style="color: #0000D0; font-weight: bold">1</span>]
+y_btwn <span style="color: #303030">=</span> between(y, <span style="color: #303030">-</span><span style="color: #0000D0; font-weight: bold">2</span>, <span style="color: #0000D0; font-weight: bold">9</span>)
+<span style="color: #008000; font-weight: bold">print</span> y_btwn 
+
+xy_common <span style="color: #303030">=</span> common(x, y)
+<span style="color: #008000; font-weight: bold">print</span> xy_common 
+</pre></div>
