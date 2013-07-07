@@ -207,6 +207,7 @@ Here's a little function to zip up a file and then delete the original:
 
 
 Recursively match a file name filter (e.g., `*.mp3`):
+
     :::python
     import fnmatch, os
     def globr(pattern, dir="."):
