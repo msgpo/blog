@@ -2,7 +2,7 @@
 .. title: Seven Plus or Minus Two
 .. slug: seven-plus-or-minus-two
 .. date: 2013/07/06 23:07:46
-.. tags: 
+.. tags: psychology
 .. link: 
 .. description: 
 -->

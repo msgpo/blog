@@ -63,6 +63,18 @@ Talks
 <table class="table-list">
 <tr>
 <td>
+    <b>Quantifying Program Comprehension</b><br />
+    Percepts and Concepts Lab<br />
+    <em>20 Sep 2013</em><br />
+    <a href="../talks/pcl_fall_2013" class="btn btn-primary" target="_blank">Slides</a>
+    <span class="muted">
+        (created with <a href="http://ipython.org/notebook.html">IPython Notebook</a>)
+    </span>
+</td>
+</tr>
+
+<tr>
+<td>
     <b>What Makes Code Hard to Understand?</b><br />
     Cognitive Lunch Series<br />
     <em>27 Feb 2013</em><br />

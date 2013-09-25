@@ -2,10 +2,12 @@
 .. title: Modeling How Programmers Read Code
 .. slug: modeling-how-programmers-read-code
 .. date: 2013/01/27 15:52:13
-.. tags: programming, research
+.. tags: programming,research,psychology
 .. link: 
 .. description: 
 -->
+
+[<a href="what-makes-code-hard-to-understand.html">Follow-up Post</a>] [<a href="https://www.youtube.com/user/synesthesiam/videos?sort=dd&view=0&tag_id=&shelf_index=0">More Videos</a>]
 
 As my fellow Ph.D. student [Eric Holk talked about recently in his blog](http://blog.theincredibleholk.org/blog/2012/12/18/how-do-we-read-code), I've been running eye-tracking experiments with programmers of different experience levels. In the experiment, a programmer is tasked with predicting the output of 10 short Python programs. A [Tobii TX300 eye tracker](http://www.tobii.com/en/eye-tracking-research/global/products/hardware/tobii-tx300-eye-tracker) keeps track of their eyes at 300 Hz, allowing me to see where they're spending their time.
 

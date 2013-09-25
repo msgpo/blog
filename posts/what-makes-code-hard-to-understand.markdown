@@ -2,7 +2,7 @@
 .. title: What Makes Code Hard to Understand?
 .. slug: what-makes-code-hard-to-understand
 .. date: 2013/04/26 11:10:01
-.. tags: programming,research,python
+.. tags: programming,research,python,psychology
 .. link: 
 .. description: 
 -->

@@ -1,0 +1,15 @@
+div.input {
+    display: none;
+}
+
+div.prompt {
+    display: none;
+}
+
+div.output img {
+    margin: 0;
+}
+
+/*.reveal {*/
+    /*overflow: visible;*/
+/*}*/
